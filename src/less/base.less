@@ -40,7 +40,7 @@ body {
   }
   .phone {
     position: fixed;
-    top: 97%;
+    top: 96.4%;
     left: 3%;
     font-family: @fontBold;
     color: #0069D9;
@@ -159,24 +159,25 @@ body {
         }
       }
     }
-    .forms {
+    form {
       height: 480px;
       margin: auto;
-      input[type=text], input[type=email] {
+      input, textarea {
         border-radius: 4px;
-        width: 95%;
+        width: 100%;
         height: 48px;
         padding: 0 20px;
         margin: 12px 0;
       }
-      input[name="later"] {height: 192px;}
-      input[type=text]:hover, input[type=email]:hover {border: 1px solid #286090;}
+      textarea {
+        height: 192px;
+        padding-top: 10px;
+      }
+      input:hover, textarea:hover {border: 1px solid #286090;}
       input[type=file] {
-        display: inline;
-        margin-left: -110px;
+        height: 0;
 	      opacity: 0;
 	      overflow: hidden;
-        z-index: -1;
         cursor: pointer;
       }
       .fa-sticky-note {
